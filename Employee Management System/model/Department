@@ -1,0 +1,10 @@
+package com.ems.model;
+
+public enum Department {
+	HR,
+    IT,
+    SALES,
+    FINANCE,
+    MARKETING
+
+}
