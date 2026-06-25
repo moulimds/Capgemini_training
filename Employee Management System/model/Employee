@@ -1,0 +1,31 @@
+package com.ems.model;
+
+public abstract sealed class Employee
+        permits FullTimeEmp, PartTimeEmp, ContractEmp {
+
+    protected int empId;
+    protected String empName;
+    protected Department department;
+    protected Address address;
+
+    public Employee(int empId, String empName,
+                    Department department,
+                    Address address) {
+
+        this.empId = empId;
+        this.empName = empName;
+        this.department = department;
+        this.address = address;
+    }
+
+    public void displayBasicInfo() {
+    	
+    	System.out.println("                          ");
+        System.out.println("Employee ID : " + empId);
+        System.out.println("Employee Name : " + empName);
+        System.out.println("Department : " + department);
+        System.out.println("Address : " + address);
+    }
+
+    public abstract double calcSalary();
+}
