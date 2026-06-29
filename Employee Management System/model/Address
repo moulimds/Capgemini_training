@@ -1,0 +1,9 @@
+package com.ems.model;
+
+public record Address(String doorNo,
+        String street,
+        String city,
+        String state,
+        String pincode) {
+
+}

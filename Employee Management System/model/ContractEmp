@@ -1,0 +1,21 @@
+package com.ems.model;
+
+public final class ContractEmp extends Employee {
+
+    private double contractAmount;
+
+    public ContractEmp(int empId,
+                            String empName,
+                            Department department,
+                            Address address,
+                            double contractAmount) {
+
+        super(empId, empName, department, address);
+        this.contractAmount = contractAmount;
+    }
+
+    @Override
+    public double calcSalary() {
+        return contractAmount;
+    }
+}
