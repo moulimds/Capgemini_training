@@ -13,9 +13,12 @@ public class Main {
 	        list.add(new Student(103, "Kavin", 91, "CSE"));
 	        list.add(new Student(104, "Divya", 95, "IT"));
 	        list.add(new Student(105, "Bala", 76, "EEE"));
-	        list.add(new Student(106, "Arun", 95, "CSE"));
+	        list.add(new Student(106, "Arun", 65, "CSE"));
 	        list.add(new Student(107, "Hari", 82, "ECE"));
 	        list.add(new Student(108, "Nila", 89, "IT"));
+	        list.add(new Student(109, "mahes",99,"CSE"));
+	        list.add(new Student(110, "sourabh", 96, "CSE"));
+	        list.add(new Student(111, "harni", 94,"IT"));
 
 	        StudentService service = new StudentService();
 
